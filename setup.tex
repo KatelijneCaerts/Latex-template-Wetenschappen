@@ -1,0 +1,192 @@
+
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{upquote}
+\usepackage{gensymb}
+\usepackage{eurosym}
+\usepackage{array}
+\usepackage{bytefield}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{pgfplotstable}
+\usepackage{csquotes}
+\usepackage{environ}
+\usepackage[bottom]{footmisc}
+\usepackage{pdfpages}
+\usepackage{textpos}
+\usepackage{helvet}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\parskip}{1em}
+\setlength\parindent{0pt}
+
+\titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-40pt}{10pt}
+
+\definecolor{green}{RGB}{172,196,0}
+\definecolor{bluetitle}{RGB}{29,141,176}
+\definecolor{blueaff}{RGB}{0,0,128}
+\definecolor{blueline}{RGB}{82,189,236}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{rulecolor}{RGB}{0,0,0}
+\definecolor{tableheadcolor}{gray}{0.92}
+
+\makeatletter
+	\newsavebox{\measure@tikzpicture}
+	\NewEnviron{scaletikzpicturetowidth}[1]{%
+  		\def\tikz@width{#1}%
+  		\def\tikzscale{1}
+  			\begin{lrbox}{\measure@tikzpicture}%
+ 	 			\BODY
+  			\end{lrbox}%
+  		\pgfmathparse{#1/\wd\measure@tikzpicture}%
+  		\edef\tikzscale{\pgfmathresult}%
+ 		 \BODY
+	}
+\makeatother
+
+\newcommand{\getsizes}[2]
+{   \path (current bounding box.south west);
+    \pgfgetlastxy{\xsw}{\ysw}
+    \path (current bounding box.north east);
+    \pgfgetlastxy{\xne}{\yne}
+    \pgfmathsetmacro{\picwidth}{(\xne-\xsw)/28.453}
+    \pgfmathsetmacro{\picheight}{(\yne-\ysw)/28.453}
+    \pgfmathsetmacro{\picxscale}{#1/\picwidth}
+    \pgfmathsetmacro{\picyscale}{#2/\picheight}
+    \xdef\xsca{\picxscale}
+    \xdef\ysca{\picyscale}
+}
+
+\newcommand{\xyscaledtikz}[3]
+{ \smash{\vphantom{
+    \begin{tikzpicture}
+        #1
+        \getsizes{#2}{#3}
+    \end{tikzpicture}
+    }}
+    \begin{tikzpicture}[xscale=\xsca,yscale=\ysca]
+        #1
+    \end{tikzpicture}
+}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{rulecolor}{RGB}{0,0,0}
+\definecolor{tableheadcolor}{gray}{0.92}
+
+\newcommand{\topline}{ 
+        \arrayrulecolor{rulecolor}\specialrule{0.1em}{\abovetopsep}{0pt}
+        \arrayrulecolor{tableheadcolor}\specialrule{\belowrulesep}{0pt}{0pt}
+        \arrayrulecolor{rulecolor}}
+
+\newcommand{\midtopline}{ 
+        \arrayrulecolor{tableheadcolor}\specialrule{\aboverulesep}{0pt}{0pt}
+        \arrayrulecolor{rulecolor}\specialrule{\lightrulewidth}{0pt}{0pt}
+        \arrayrulecolor{white}\specialrule{\belowrulesep}{0pt}{0pt}
+        \arrayrulecolor{rulecolor}}
+
+\newcommand{\bottomline}{ 
+        \arrayrulecolor{white}\specialrule{\aboverulesep}{0pt}{0pt}
+        \arrayrulecolor{rulecolor} 
+        \specialrule{\heavyrulewidth}{0pt}{\belowbottomsep}}
+
+\newcommand{\midheader}[2]{
+        \midrule\topmidheader{#1}{#2}}
+
+\newcommand\topmidheader[2]{\multicolumn{#1}{c}{\textsc{#2}}\\
+                \addlinespace[0.5ex]}
+
+\newcolumntype{A}{>{\raggedright\arraybackslash}p{7cm}}
+\newcolumntype{B}{>{\raggedright\arraybackslash}p{3cm}}
+\newcolumntype{C}{>{\raggedright\arraybackslash}p{4cm}}
+\newcolumntype{D}{>{\raggedright\arraybackslash}p{2cm}}
+
+\newcolumntype{E}{>{\raggedright\arraybackslash}p{0.50\textwidth}}
+\newcolumntype{F}{>{\raggedright\arraybackslash}p{0.45\textwidth}}
+\newcolumntype{G}{>{\raggedright\arraybackslash}p{0.25\textwidth}}
+\newcolumntype{H}{>{\raggedright\arraybackslash}p{0.20\textwidth}}
+\newcolumntype{I}{>{\raggedright\arraybackslash}p{0.10\textwidth}}
+
+%%Tables
+\pgfplotstableset{
+        normal/.style ={
+        header=true,
+        string type,
+        column type=l,
+        every odd row/.style={
+            before row=
+        },
+        every head row/.style={
+            before row={\topline\rowcolor{tableheadcolor}},
+            after row={\midtopline}
+        },
+        every last row/.style={
+            after row=\bottomline
+        },
+        col sep=&,
+        row sep=\\
+    },
+    center/.style ={
+        header=true,
+        string type,
+        column type=c,
+        every odd row/.style={
+            before row=
+        },
+        every head row/.style={
+            before row={\topline\rowcolor{tableheadcolor}},
+            after row={\midtopline}
+        },
+        every last row/.style={
+            after row=\bottomline
+        },
+        col sep=&,
+        row sep=\\
+    }
+}
+
+\lstset{ 
+  backgroundcolor=\color{white},
+  basicstyle=\footnotesize\ttfamily,        
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  commentstyle=\color{mygreen},    
+  deletekeywords={...},            
+  escapeinside={\%*}{*)},         
+  extendedchars=true,             
+  frame=single,                    
+  keepspaces=true,                
+  keywordstyle=\color{blue},       
+  language=matlab,                 
+  otherkeywords={*,},          
+  numbers=left,                   
+  numbersep=9pt,                   
+  numberstyle=\footnotesize,  
+  rulecolor=\color{black},         
+  showspaces=false,                
+  showstringspaces=false,          
+  showtabs=false,                  
+  stepnumber=1,                   
+  stringstyle=\color{mymauve},     
+  tabsize=2,                       
+  framexleftmargin=2em,
+  xleftmargin=3em,
+  captionpos=b
+}
+

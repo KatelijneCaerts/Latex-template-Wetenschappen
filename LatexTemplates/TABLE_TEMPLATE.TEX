@@ -1,0 +1,28 @@
+\begin{table}
+        \centering
+        \pgfplotstabletypeset[normal,
+                columns/eg/.style={
+                column name={$E_{\textup{g}}$ (\si{\electronvolt})},
+                dec sep align
+        }
+        ]{ %
+        Material        & Symbol &  eg  & Type \\
+        \topmidheader{5}{Elements}
+        diamond         & C      & 5.46 & i \\ [1ex]
+        silicon         & Si     & 1.12 & i \\ [1ex]
+        germanium       & Ge     & 0.67 & i \\ [1ex]
+        selenium        & Se     & 1.74 & d \\ [1ex]
+        \midheader{5}{IV-IV Compounds}
+        silicon carbide & SiC 3C & 2.36 & i \\ [1ex]
+        silicon carbide & SiC 4H & 3.28 & i \\ [1ex]
+        silicon carbide & SiC 6H & 3.03 & i \\ [1ex]
+        \midheader{5}{III-V Compounds}
+        indium phosphide& InP    & 1.27 & d \\ [1ex]
+        indium arsenide & InAs   & 0.355& d \\ [1ex]
+        gallium nitride & GaN    & 3.37 & d \\ [1ex]
+        gallium arsenide& GaAs   & 1.42 & d \\ [1ex]
+        aluminium nitride & AlN  & 6.2  & d \\ 
+        }
+        \caption{The bandgab of some semiconductors.}
+\end{table}
+

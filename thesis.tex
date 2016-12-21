@@ -1,0 +1,82 @@
+%%
+%% UNOFFICIAL LATEX TEMPLATE FACULTY OF SCIENCE
+%%
+%% This template was adopted from the kulemt template made by Luc Van Eycken
+%%
+%% Copyright (C) 2010 by Luc Van Eycken <Luc.VanEycken@esat.kuleuven.be>
+%%
+%% Changed by:
+%%   2016 - Gert-Jan Andries <info@gertjanandries.com>
+%%   2016 - Katelijne Caerts <katelijne@caerts.be>
+%% 
+%% This file may be distributed and/or modified under the conditions of
+%% the LaTeX Project Public License, either version 1.2 of this license
+%% or (at your option) any later version.  The latest version of this
+%% license is in:
+%% 
+%%    http://www.latex-project.org/lppl.txt
+%% 
+%% and version 1.2 or later is part of all distributions of LaTeX version
+%% 1999/12/01 or later.
+%% 
+\documentclass[master=wis,masteroption=ow,oneside]{kulwet}
+
+\setup{
+  title={Dit is de titel}, 
+  subtitle={Dit is een ondertitel},     %Optioneel
+  author={Voornaam ACHTERNAAM},
+  promotor={Voornaam Achternaam},     
+  copromotor = {Voornaam Achternaam},   %Optioneel
+  assistant={Voornaam Achternaam}       %Optioneel
+}
+
+% De volgende \setup mag verwijderd worden als geen fiche gewenst is.
+\setup{filingcard,
+    translatedtitle={place english translation of title here}, 
+    udc=621.3,
+    shortabstract={Hier komt een heel bondig abstract van hooguit 500
+    woorden. \LaTeX\ commando's mogen hier gebruikt worden. Blanco lijnen
+    (of het commando \texttt{\string\pa r}) zijn wel niet toegelaten!
+    \endgraf}}
+
+\include{setup} %setup for different packages
+
+\begin{document}
+
+  %Preface
+  \begin{preface}
+    \input{Inleiding/preface}
+  \end{preface}
+
+  %Table of Contents
+  \setcounter{tocdepth}{2}
+  \tableofcontents*
+
+  %Abstract
+  \begin{abstract}
+    \input{Inleiding/abstract}
+  \end{abstract}
+
+  %Lijst met Symbolen en Afkortingen
+  \include{SymbolsAbbs/SymbolsAndAbbreviations}
+
+  %Eigenlijke tekst
+  \mainmatter
+
+    \include{Hoofdstuk/Hoofdstuk}
+    \include{Besluit/Besluit}
+
+    %Voeg een bibliografie toe
+    \bibliographystyle{abbrv}
+    \bibliography{referenties} %referentie naar het bibtex bestand
+
+    % Indien er bijlagen zijn:
+    \appendixpage*          % indien gewenst
+    \appendix
+    \include{Appendix/app-n}
+    % ... en zo verder tot
+    %\include{Appendix/app-n}
+
+  \backmatter
+
+\end{document}

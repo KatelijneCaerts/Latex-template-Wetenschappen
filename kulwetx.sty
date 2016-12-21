@@ -1,0 +1,82 @@
+%%
+%% UNOFFICIAL LATEX TEMPLATE FACULTY OF SCIENCE
+%%
+%% This template was adopted from the kulemt template made by Luc Van Eycken
+%%
+%% Copyright (C) 2010 by Luc Van Eycken <Luc.VanEycken@esat.kuleuven.be>
+%%
+%% Changed by:
+%%   2016 - Gert-Jan Andries <info@gertjanandries.com>
+%%   2016 - Katelijne Caerts <katelijne@caerts.be>
+%% 
+%% This file may be distributed and/or modified under the conditions of
+%% the LaTeX Project Public License, either version 1.2 of this license
+%% or (at your option) any later version.  The latest version of this
+%% license is in:
+%% 
+%%    http://www.latex-project.org/lppl.txt
+%% 
+%% and version 1.2 or later is part of all distributions of LaTeX version
+%% 1999/12/01 or later.
+%% 
+\NeedsTeXFormat{LaTeX2e}[2001/06/01]
+\ProvidesPackage{kulwetx}
+    [2016/12/16 v1.0
+     Additions to the kulwet document class]
+\newsavebox\kulwetx@chpnumbox
+\def\kulwetx@buildchpnum#1#2{\sbox\kulwetx@chpnumbox{%
+    \tabular[t]{@{}c@{}}%
+      \makebox[0pt][c]{\chapnamefont #1\strut}\\[.5ex]%
+      \colorbox[gray]{.8}{\color{black}%
+        \rule[-7em]{0pt}{0pt}%
+        {\chapnumfont \hspace{.7ex}#2\hspace{.7ex}\strut}}%
+    \endtabular}}
+\makechapterstyle{kulwetman}{%
+  \def\chapnamefont{\sffamily\large}%
+  \def\chapnumfont{\sffamily\Huge}%
+  \def\chaptitlefont{\sffamily\raggedright\huge}%
+  %\setlength\beforechapskip\z@skip
+  \setlength\beforechapskip{5\p@}
+  \setlength\midchapskip{0\p@}% 29
+  \setlength\afterchapskip{40\p@}% 40
+  \def\printchaptername{}%
+  \def\chapternamenum{}%
+  \def\afterchapternum{}%
+  \def\printchapternum{%
+    \kulwetx@buildchpnum\@chapapp\thechapter}%
+  \def\printchapternonum{%
+    \kulwetx@buildchpnum{\vphantom{\@chapapp}}{\hphantom{\thechapter}}}%
+  \def\printchaptertitle##1{%
+    \usebox\kulwetx@chpnumbox \hfill
+    \@tempdima\hsize  \advance\@tempdima -1em%
+    \advance\@tempdima -\wd\kulwetx@chpnumbox
+    \parbox[t]\@tempdima{\vspace\midchapskip
+      \leavevmode \leaders\hrule\@height\p@ \hfill \kern\z@ \par
+      \chaptitlefont ##1\par}}}
+\makeheadstyles{kulwetman}{%
+  \def\partnamefont{\normalfont\huge\sffamily}%
+  \def\partnumfont{\normalfont\huge\sffamily}%
+  \def\parttitlefont{\normalfont\Huge\sffamily}%
+  \chapterstyle{kulwetman}%
+  \setsecheadstyle{\Large\sffamily\raggedright}%
+  \setsubsecheadstyle{\large\sffamily\raggedright}%
+  \setsubsubsecheadstyle{\large\sffamily\itshape\raggedright}%
+  \setparaheadstyle{\normalsize\scshape}%
+  \setbeforeparaskip{\medskipamount}}
+\newcommand*\kulwetmanToC{%
+  \let\cftchapterfont\sffamily
+  \let\cftchapterdotsep\cftdotsep
+  \def\cftchapterleader{\normalfont\cftdotfill{\cftchapterdotsep}}%
+  \def\cftchapterpagefont{}%
+  \setlength\cftbeforechapterskip{\mediumskipamount}%
+  \setlength\cftbeforesectionskip{\smallskipamount}%
+  \settocdepth{subsection}%
+  \addtodef\cftchapterbreak{\par}{}%
+  \let\cftsubsectionfont\itshape
+  \def\l@subsection##1##2{%
+    \leftskip\cftsubsectionindent \rightskip\@tocrmarg \parfillskip\fill
+    \ifhmode ,\quad \else\noindent\fi \ignorespaces
+    {\let\numberline\@gobble \cftsubsectionfont ##1}%
+    ~~{\cftsubsectionpagefont ##2}\ignorespaces}}
+\endinput
+%% End of file `kulwetx.sty'.

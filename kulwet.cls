@@ -565,7 +565,7 @@
       \raggedright \kulwet@selectmasterlanguage
       \noindent \hskip-1cm%
       \begin{textblock}{191}(-14,11)
-        \colorbox{green}{\hspace{123mm}\ \parbox[c][18truemm]{68mm}{\textcolor{white}{FACULTEIT WETENSCHAPPEN}}}
+        \colorbox{green}{\hspace{123mm}\ \parbox[c][18truemm]{68mm}{\textcolor{white}{FACULT\kulwet@ifdutch{EIT WETENSCHAPPEN}{Y OF SCIENCE}}}}
       \end{textblock}
       \begin{textblock}{70}(-8, 3)
         \kulwet@kulfac@logo{width=56mm}

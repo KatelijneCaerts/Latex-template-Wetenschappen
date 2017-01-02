@@ -95,7 +95,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 
 <table style="width: 100%; float: left;" border="1px"><colgroup> <col width="41%" /> <col width="51%" /> <col width="7%" /> </colgroup>
 <tbody>
-<tr style=border="1px">
+<tr border="1px">
 <td>
 <p><strong>Master</strong></p>
 </td>
@@ -106,7 +106,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p><strong>Language</strong></p>
 </td>
 </tr>
-<trstyle=border="1px">
+<trborder="1px">
 <td>
 <p>Master of Science in de Wiskunde <strong>(wis)</strong></p>
 </td>
@@ -119,7 +119,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p>NL</p>
 </td>
 </tr>
-<tr style=border="1px">
+<tr border="1px">
 <td>
 <p>Master of Science of Mathematics <strong>(math)</strong></p>
 </td>
@@ -131,7 +131,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p>ENG</p>
 </td>
 </tr>
-<trstyle=border="1px">
+<trborder="1px">
 <td>
 <p>Master of Science in de bio-informatica <strong>(bin)</strong></p>
 </td>
@@ -142,7 +142,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p>NL</p>
 </td>
 </tr>
-<tr style=border="1px">
+<tr border="1px">
 <td>
 <p>Master in de milieutechnologie en de milieuwetenschappen <strong>(mtw)</strong></p>
 </td>
@@ -153,7 +153,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p>NL</p>
 </td>
 </tr>
-<trstyle=border="1px">
+<trborder="1px">
 <td>
 <p>Master of Science in de Statistiek <strong>(sta)</strong></p>
 </td>
@@ -168,7 +168,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p>NL</p>
 </td>
 </tr>
-<tr style=border="1px">
+<tr border="1px">
 <td>
 <p>Master of Science in de medische stralingsfysica <strong>(mms)</strong></p>
 </td>
@@ -179,7 +179,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p>NL</p>
 </td>
 </tr>
-<trstyle=border="1px">
+<trborder="1px">
 <td>
 <p>Master of Science in Nuclear Engineering <strong>(mne)</strong></p>
 </td>
@@ -190,7 +190,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p>ENG</p>
 </td>
 </tr>
-<tr style=border="1px">
+<tr border="1px">
 <td>
 <p>Master of Science in Space Studies <strong>(mss)</strong></p>
 </td>

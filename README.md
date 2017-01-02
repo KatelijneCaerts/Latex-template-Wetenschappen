@@ -1,6 +1,6 @@
 # Unofficial Latex-template-Wetenschappen
 
-	*This template was adopted from the kulemt template made by Luc Van Eycken* and was adapted by Gert-Jan Andries and Katelijne Caerts.*
+	*This template was adopted from the kulemt template made by Luc Van Eycken and was adapted by Gert-Jan Andries and Katelijne Caerts.*
 
 ## Template structure
 	

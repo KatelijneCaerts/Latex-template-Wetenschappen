@@ -1,16 +1,16 @@
-#Unofficial Latex-template-Wetenschappen
+# Unofficial Latex-template-Wetenschappen
 
-	*This template was adopted from the kulemt template made by Luc Van Eycken* and was adapted by Gert-Jan Andries and Katelijne Caerts
+	*This template was adopted from the kulemt template made by Luc Van Eycken* and was adapted by Gert-Jan Andries and Katelijne Caerts.*
 
-##Template structure
+## Template structure
 	
-	###thesis.tex
+	### thesis.tex
 
 		This is the main tex file. This file contains all the settings and the structure of your thesis. 
 
 		To setup your thesis fill in thes setup. All non-optional fields are required.
 
-		```tex
+		```latex
 			\setup{
 			  title={Put your title here}, 
 			  subtitle={Put an optional subtitle},   %Optional
@@ -23,7 +23,7 @@
 
 		If you want to have a fillingcard at the end of you thesis automatically generated you can add this to the file:
 		
-		```tex
+		```latex
 			\setup{
 				filingcard,
 	    		translatedtitle={place english translation of title here}, 
@@ -33,7 +33,7 @@
 		```
 		General structure of the thesis:
 		
-		```tex
+		```latex
 		\begin{document}
 
 		  %Preface
@@ -76,19 +76,19 @@
 		\end{document}
 		```
 
-	###setup.tex
+	### setup.tex
 
 		This file contains all the package imports, configurations etc. If you want to include or setup a new package, you can add it in this file.
 
-	###referenties.bib
+	### referenties.bib
 
 		This file contains you bibtex references.
 
-##Supported masters
+## Supported masters
 
 	All supported master options are in the file kulwet.cfg. In order to select you master options you need to change te thesis.tex file: 
 
-		```tex
+		```latex
 			\documentclass[master=wis,masteroption=ow,oneside]{kulwet}
 		```
 	First, setup you main master (e.g. wis for maths). Than select you masteroption (e.g. ow for onderwijs). The list below contains all supported options:
@@ -125,6 +125,6 @@
 
 	> If your master is not in the table above please start an issue with all the detail and we will create it as soon as possible. You can also send an email to template@gertjanandries.com. You can also add the master option yourself (do not forget to push this to our repository, so everyone can use it!). These options are defined in kulwet.cfg
 	
-#License
+# License
 
 	This file may be distributed and/or modified under the conditions of the LaTeX Project Public License, either version 1.2 of this license or (at your option) any later version. The latest version of this license is in: http://www.latex-project.org/lppl.txt and version 1.2 or later is part of all distributions of LaTeX version 1999/12/01 or later.

@@ -1,23 +1,3 @@
-<head>
-<style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-</style>
-</head>
-
 # Unofficial Latex-template-Wetenschappen
 
 _This template was adopted from the kulemt template made by Luc Van Eycken and was adapted by Gert-Jan Andries and Katelijne Caerts._
@@ -113,9 +93,9 @@ All supported master options are in the file kulwet.cfg. In order to select you 
 ```
 First, setup you main master (e.g. wis for maths). Than select you masteroption (e.g. ow for onderwijs). The list below contains all supported options:
 
-<table style="width: 100%; float: left;" border="2px"><colgroup> <col width="41%" /> <col width="51%" /> <col width="7%" /> </colgroup>
+<table style="width: 100%; float: left;" border="1px"><colgroup> <col width="41%" /> <col width="51%" /> <col width="7%" /> </colgroup>
 <tbody>
-<tr class="odd">
+<tr style=border="1px">
 <td>
 <p><strong>Master</strong></p>
 </td>
@@ -126,7 +106,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p><strong>Language</strong></p>
 </td>
 </tr>
-<tr class="even">
+<trstyle=border="1px">
 <td>
 <p>Master of Science in de Wiskunde <strong>(wis)</strong></p>
 </td>
@@ -139,7 +119,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p>NL</p>
 </td>
 </tr>
-<tr class="odd">
+<tr style=border="1px">
 <td>
 <p>Master of Science of Mathematics <strong>(math)</strong></p>
 </td>
@@ -151,7 +131,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p>ENG</p>
 </td>
 </tr>
-<tr class="even">
+<trstyle=border="1px">
 <td>
 <p>Master of Science in de bio-informatica <strong>(bin)</strong></p>
 </td>
@@ -162,7 +142,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p>NL</p>
 </td>
 </tr>
-<tr class="odd">
+<tr style=border="1px">
 <td>
 <p>Master in de milieutechnologie en de milieuwetenschappen <strong>(mtw)</strong></p>
 </td>
@@ -173,7 +153,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p>NL</p>
 </td>
 </tr>
-<tr class="even">
+<trstyle=border="1px">
 <td>
 <p>Master of Science in de Statistiek <strong>(sta)</strong></p>
 </td>
@@ -188,7 +168,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p>NL</p>
 </td>
 </tr>
-<tr class="odd">
+<tr style=border="1px">
 <td>
 <p>Master of Science in de medische stralingsfysica <strong>(mms)</strong></p>
 </td>
@@ -199,7 +179,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p>NL</p>
 </td>
 </tr>
-<tr class="even">
+<trstyle=border="1px">
 <td>
 <p>Master of Science in Nuclear Engineering <strong>(mne)</strong></p>
 </td>
@@ -210,7 +190,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 <p>ENG</p>
 </td>
 </tr>
-<tr class="odd">
+<tr style=border="1px">
 <td>
 <p>Master of Science in Space Studies <strong>(mss)</strong></p>
 </td>

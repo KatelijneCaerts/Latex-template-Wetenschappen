@@ -107,12 +107,19 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 </tr>
 <tr class="even">
 <td><p>Master of Science in de Wiskunde (wis)</p></td>
-<td><p>ow:optie Onderwijs oz:optie Onderzoek po:optie Professionele</p></td>
+<td>
+	<p>ow:optie Onderwijs</p>
+	<p>oz:optie Onderzoek</p>
+	<p>po:optie Professionele</p>
+</td>
 <td><p>NL</p></td>
 </tr>
 <tr class="odd">
 <td><p>Master of Science of Mathematics (math)</p></td>
-<td><p>re:option Research po:option Professional</p></td>
+<td>
+	<p>re:option Research</p>
+	<p> po:option Professional</p>
+</td>
 <td><p>ENG</p></td>
 </tr>
 <tr class="even">
@@ -127,7 +134,13 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 </tr>
 <tr class="even">
 <td><p>Master of Science in de Statistiek (sta)</p></td>
-<td><p>asm:specialisatie Algemene statistische methodologie bm:specialisatie Biometrie bs:specialisatie Business statistiek is:specialisatie Industriële statistiek sgp:specialisatie Statistiek in de sociale, gedrags- en pedagogische wetenschappen so:specialisatie Statistiek en Onderwijs</p></td>
+<td>
+	<p>asm:specialisatie Algemene statistische methodologie </p>
+	<p>	bm:specialisatie Biometrie bs:specialisatie Business statistiek </p>
+	<p>	is:specialisatie Industriële statistiek </p>
+	<p>	sgp:specialisatie Statistiek in de sociale, gedrags- en pedagogische wetenschappen </p>
+	<p>	so:specialisatie Statistiek en Onderwijs</p>
+</td>
 <td><p>NL</p></td>
 </tr>
 <tr class="odd">
@@ -142,7 +155,11 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 </tr>
 <tr class="odd">
 <td><p>Master of Science in Space Studies (mss)</p></td>
-<td><p>slpbm:major subject: Space Law, Policy, Business and Managem</p></td>
+<td>
+	<p>	slpbm:major subject: Space Law, Policy, Business and Managemt</p>
+	<p>	ss:major subject: Space Sciences</p>
+	<p>	sta:major Subject: Space Technology and Applications</p>
+</td>
 <td></td>
 </tr>
 </tbody>

@@ -1,6 +1,6 @@
 # Unofficial Latex-template-Wetenschappen
 
-	*This template was adopted from the kulemt template made by Luc Van Eycken and was adapted by Gert-Jan Andries and Katelijne Caerts.*
+_This template was adopted from the kulemt template made by Luc Van Eycken and was adapted by Gert-Jan Andries and Katelijne Caerts._
 
 ## Template structure
 	
@@ -28,7 +28,7 @@ If you want to have a fillingcard at the end of you thesis automatically generat
 		filingcard,
 		translatedtitle={place english translation of title here}, 
 		udc=621.3,
-		shortabstract={Hier komt een heel bondig abstract van hooguit 500 woorden. \LaTeX\ commando's mogen hier gebruikt worden. Blanco lijnen (of het commando \texttt{\string\pa r}) zijn wel niet toegelaten!\endgraf}
+		shortabstract={Hier komt een heel bondig abstract van hooguit 500 woorden.}
 	}
 ```
 General structure of the thesis:
@@ -78,11 +78,11 @@ General structure of the thesis:
 
 ### setup.tex
 
-	This file contains all the package imports, configurations etc. If you want to include or setup a new package, you can add it in this file.
+This file contains all the package imports, configurations etc. If you want to include or setup a new package, you can add it in this file.
 
 ### referenties.bib
 
-	This file contains you bibtex references.
+This file contains you bibtex references.
 
 ## Supported masters
 
@@ -93,35 +93,61 @@ All supported master options are in the file kulwet.cfg. In order to select you 
 ```
 First, setup you main master (e.g. wis for maths). Than select you masteroption (e.g. ow for onderwijs). The list below contains all supported options:
 
-+-------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-| Master        													| Options       																	| Language  |
-+-------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-| Master of Science in de Wiskunde (wis)							| ow:optie Onderwijs																| NL		|
-|               													| oz:optie Onderzoek																| 			|
-|               													| po:optie Professionele															| 			|
-+-------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-| Master of Science of Mathematics (math)							| re:option Research																| ENG		|
-|               													| po:option Professional															| 			|
-+-------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-| Master of Science in de bio-informatica (bin)						| none																				| NL		|
-+-------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-| Master in de milieutechnologie en de milieuwetenschappen (mtw)	| none																				| NL		|
-+-------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-| Master of Science in de Statistiek (sta)							| asm:specialisatie Algemene statistische methodologie								| NL		|
-|               													| bm:specialisatie Biometrie														| 			|
-|               													| bs:specialisatie Business statistiek												| 			|
-|																	| is:specialisatie Industriële statistiek 											|			|
-|																	| sgp:specialisatie Statistiek in de sociale, gedrags- en pedagogische wetenschappen|			|
-|																	| so:specialisatie Statistiek en Onderwijs 											|			|
-+-------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-| Master of Science in de medische stralingsfysica (mms)			| none																				| NL		|
-+-------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-| Master of Science in Nuclear Engineering (mne)					| none																				| ENG		|
-+-------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-| Master of Science in Space Studies (mss)							| slpbm:major subject: Space Law, Policy, Business and Management					| ENG		|
-|               													| ss:major subject: Space Sciences													| 			|
-|               													| sta:major Subject: Space Technology and Applications								| 			|
-+-------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
+<table style="width:100%;">
+<colgroup>
+<col width="41%" />
+<col width="51%" />
+<col width="7%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p>Master</p></td>
+<td><p>Options</p></td>
+<td><p>Language</p></td>
+</tr>
+<tr class="even">
+<td><p>Master of Science in de Wiskunde (wis)</p></td>
+<td><p>ow:optie Onderwijs oz:optie Onderzoek po:optie Professionele</p></td>
+<td><p>NL</p></td>
+</tr>
+<tr class="odd">
+<td><p>Master of Science of Mathematics (math)</p></td>
+<td><p>re:option Research po:option Professional</p></td>
+<td><p>ENG</p></td>
+</tr>
+<tr class="even">
+<td><p>Master of Science in de bio-informatica (bin)</p></td>
+<td><p>none</p></td>
+<td><p>NL</p></td>
+</tr>
+<tr class="odd">
+<td><p>Master in de milieutechnologie en de milieuwetenschappen (mtw)</p></td>
+<td><p>none</p></td>
+<td><p>NL</p></td>
+</tr>
+<tr class="even">
+<td><p>Master of Science in de Statistiek (sta)</p></td>
+<td><p>asm:specialisatie Algemene statistische methodologie bm:specialisatie Biometrie bs:specialisatie Business statistiek is:specialisatie Industriële statistiek sgp:specialisatie Statistiek in de sociale, gedrags- en pedagogische wetenschappen so:specialisatie Statistiek en Onderwijs</p></td>
+<td><p>NL</p></td>
+</tr>
+<tr class="odd">
+<td><p>Master of Science in de medische stralingsfysica (mms)</p></td>
+<td><p>none</p></td>
+<td><p>NL</p></td>
+</tr>
+<tr class="even">
+<td><p>Master of Science in Nuclear Engineering (mne)</p></td>
+<td><p>none</p></td>
+<td><p>ENG</p></td>
+</tr>
+<tr class="odd">
+<td><p>Master of Science in Space Studies (mss)</p></td>
+<td><p>slpbm:major subject: Space Law, Policy, Business and Managem</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
 
 > If your master is not in the table above please start an issue with all the detail and we will create it as soon as possible. You can also send an email to template@gertjanandries.com. You can also add the master option yourself (do not forget to push this to our repository, so everyone can use it!). These options are defined in kulwet.cfg
 	

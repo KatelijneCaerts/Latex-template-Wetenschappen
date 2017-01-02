@@ -93,74 +93,113 @@ All supported master options are in the file kulwet.cfg. In order to select you 
 ```
 First, setup you main master (e.g. wis for maths). Than select you masteroption (e.g. ow for onderwijs). The list below contains all supported options:
 
-<table style="width:100%;">
-<colgroup>
-<col width="41%" />
-<col width="51%" />
-<col width="7%" />
-</colgroup>
+<table style="width: 100%; float: left;" border="2px"><colgroup> <col width="41%" /> <col width="51%" /> <col width="7%" /> </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Master</p></td>
-<td><p>Options</p></td>
-<td><p>Language</p></td>
+<td>
+<p><strong>Master</strong></p>
+</td>
+<td>
+<p><strong>Options</strong></p>
+</td>
+<td>
+<p><strong>Language</strong></p>
+</td>
 </tr>
 <tr class="even">
-<td><p>Master of Science in de Wiskunde (wis)</p></td>
 <td>
-	<p>ow:optie Onderwijs</p>
-	<p>oz:optie Onderzoek</p>
-	<p>po:optie Professionele</p>
+<p>Master of Science in de Wiskunde <strong>(wis)</strong></p>
 </td>
-<td><p>NL</p></td>
+<td>
+<p><strong>ow</strong>:optie Onderwijs</p>
+<p><strong>oz</strong>:optie Onderzoek</p>
+<p><strong>po</strong>:optie Professionele</p>
+</td>
+<td>
+<p>NL</p>
+</td>
 </tr>
 <tr class="odd">
-<td><p>Master of Science of Mathematics (math)</p></td>
 <td>
-	<p>re:option Research</p>
-	<p> po:option Professional</p>
+<p>Master of Science of Mathematics <strong>(math)</strong></p>
 </td>
-<td><p>ENG</p></td>
+<td>
+<p><strong>re</strong>:option Research</p>
+<p><strong>po</strong>:option Professional</p>
+</td>
+<td>
+<p>ENG</p>
+</td>
 </tr>
 <tr class="even">
-<td><p>Master of Science in de bio-informatica (bin)</p></td>
-<td><p>none</p></td>
-<td><p>NL</p></td>
+<td>
+<p>Master of Science in de bio-informatica <strong>(bin)</strong></p>
+</td>
+<td>
+<p>none</p>
+</td>
+<td>
+<p>NL</p>
+</td>
 </tr>
 <tr class="odd">
-<td><p>Master in de milieutechnologie en de milieuwetenschappen (mtw)</p></td>
-<td><p>none</p></td>
-<td><p>NL</p></td>
+<td>
+<p>Master in de milieutechnologie en de milieuwetenschappen <strong>(mtw)</strong></p>
+</td>
+<td>
+<p>none</p>
+</td>
+<td>
+<p>NL</p>
+</td>
 </tr>
 <tr class="even">
-<td><p>Master of Science in de Statistiek (sta)</p></td>
 <td>
-	<p>asm:specialisatie Algemene statistische methodologie </p>
-	<p>	bm:specialisatie Biometrie bs:specialisatie Business statistiek </p>
-	<p>	is:specialisatie Industriële statistiek </p>
-	<p>	sgp:specialisatie Statistiek in de sociale, gedrags- en pedagogische wetenschappen </p>
-	<p>	so:specialisatie Statistiek en Onderwijs</p>
+<p>Master of Science in de Statistiek <strong>(sta)</strong></p>
 </td>
-<td><p>NL</p></td>
+<td>
+<p><strong>asm</strong>:specialisatie Algemene statistische methodologie</p>
+<p><strong>bm</strong>:specialisatie Biometrie bs:specialisatie Business statistiek</p>
+<p><strong>is</strong>:specialisatie Industri&euml;le statistiek</p>
+<p><strong>sgp</strong>:specialisatie Statistiek in de sociale, gedrags- en pedagogische wetenschappen</p>
+<p><strong>so</strong>:specialisatie Statistiek en Onderwijs</p>
+</td>
+<td>
+<p>NL</p>
+</td>
 </tr>
 <tr class="odd">
-<td><p>Master of Science in de medische stralingsfysica (mms)</p></td>
-<td><p>none</p></td>
-<td><p>NL</p></td>
+<td>
+<p>Master of Science in de medische stralingsfysica <strong>(mms)</strong></p>
+</td>
+<td>
+<p>none</p>
+</td>
+<td>
+<p>NL</p>
+</td>
 </tr>
 <tr class="even">
-<td><p>Master of Science in Nuclear Engineering (mne)</p></td>
-<td><p>none</p></td>
-<td><p>ENG</p></td>
+<td>
+<p>Master of Science in Nuclear Engineering <strong>(mne)</strong></p>
+</td>
+<td>
+<p>none</p>
+</td>
+<td>
+<p>ENG</p>
+</td>
 </tr>
 <tr class="odd">
-<td><p>Master of Science in Space Studies (mss)</p></td>
 <td>
-	<p>	slpbm:major subject: Space Law, Policy, Business and Managemt</p>
-	<p>	ss:major subject: Space Sciences</p>
-	<p>	sta:major Subject: Space Technology and Applications</p>
+<p>Master of Science in Space Studies <strong>(mss)</strong></p>
 </td>
-<td></td>
+<td>
+<p><strong>slpbm</strong>:major subject: Space Law, Policy, Business and Managemt</p>
+<p><strong>ss</strong>:major subject: Space Sciences</p>
+<p><strong>sta</strong>:major Subject: Space Technology and Applications</p>
+</td>
+<td>&nbsp;</td>
 </tr>
 </tbody>
 </table>

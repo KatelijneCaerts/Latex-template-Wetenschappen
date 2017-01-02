@@ -1,3 +1,23 @@
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+
 # Unofficial Latex-template-Wetenschappen
 
 _This template was adopted from the kulemt template made by Luc Van Eycken and was adapted by Gert-Jan Andries and Katelijne Caerts._
@@ -92,24 +112,6 @@ All supported master options are in the file kulwet.cfg. In order to select you 
 	\documentclass[master=wis,masteroption=ow,oneside]{kulwet}
 ```
 First, setup you main master (e.g. wis for maths). Than select you masteroption (e.g. ow for onderwijs). The list below contains all supported options:
-
-<style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-</style>
 
 <table style="width: 100%; float: left;" border="2px"><colgroup> <col width="41%" /> <col width="51%" /> <col width="7%" /> </colgroup>
 <tbody>

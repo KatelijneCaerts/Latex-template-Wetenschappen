@@ -201,6 +201,30 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 </td>
 <td>&nbsp;</td>
 </tr>
+<tr class="even">
+<td>
+<p>Master of Science in Physics  <strong>(phy)</strong></p>
+</td>
+<td>
+<p><strong>re</strong>:option Research</p>
+<p><strong>ps</strong>:option Physics for society</p>
+</td>
+<td>
+<p>ENG</p>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<p>Master of Science in Fysica  <strong>(fys)</strong></p>
+</td>
+<td>
+<p><strong>ow</strong>:optie Onderwijs</p>
+<p><strong>fm</strong>:optie Fysica in de maatschappij</p>
+</td>
+<td>
+<p>NL</p>
+</td>
+</tr>
 </tbody>
 </table>
 

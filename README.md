@@ -219,6 +219,7 @@ First, setup you main master (e.g. wis for maths). Than select you masteroption 
 </td>
 <td>
 <p><strong>ow</strong>:optie Onderwijs</p>
+<p><strong>oz</strong>:optie Onderzoek</p>
 <p><strong>fm</strong>:optie Fysica in de maatschappij</p>
 </td>
 <td>
